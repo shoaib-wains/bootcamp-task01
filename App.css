@@ -1,0 +1,554 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.flex-container {
+  display: flex;
+  /* padding-left: 0px; */
+  /* flex-wrap: nowrap; */
+  /* background-color: DodgerBlue; */
+}
+
+.desktop{
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+}
+
+/* upper part i.e fats domino */
+.fats-dominos{
+  background-color: pink;
+  /* padding-bottom: 70px; */
+  width: 1004px;
+  height: 270px;
+  /* background-image: url(pic);  */
+  background-image: url("../../src/assets/smokeman.jpg");
+  background-position:left;
+}
+.h1-fat-dominos{
+  align-items: flex-start;
+  display: flex;
+  padding-left: 80px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-size:xx-large; */
+  color: azure;
+}
+.h5-dominos{
+  align-items: flex-start;
+  display: flex;
+  padding-left: 80px;
+  /* padding-top: 80px; */
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* font-size:xx-large; */
+  color: white;
+}
+.h6-dominos{
+  align-items: flex-start;
+  display: flex;
+  padding-left: 80px;
+  padding-top: 100px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: azure;}
+
+
+
+
+  /* lower area i.e. songs details and playlist etc */
+.lower-area{
+  display: flex;
+  flex-direction:column;
+  background-color: black;
+  width: 1004px;
+  height: 718px; 
+  color: aliceblue;
+  display: flex;
+  align-content: flex-start;
+  padding: 16px,28,0px,28px;
+  gap: 24px;
+  
+}
+
+/* styling of the following button div  */
+.following{
+  height: 56px;
+  width: 948px;
+  padding-top: 24px;
+  display: flex;
+  align-items: flex-start;
+
+}
+.following-btn{
+  height: 28px;
+  width: 113px;
+  gap: 24px;
+  border-radius: 4px;
+  border-width: 1px;
+  padding: 8px,24px,8px,24px;
+}
+.menu{
+height: 16px;
+gap: 24px;
+width: 1px;
+}
+/* styling of table showing songs details */
+.popular-table{
+  width: 665px;
+  height: 360px;
+  /* margin:24px; */
+}
+
+/* popular word styling */
+.popular{
+  height: 24px;
+  width: 665px;
+}
+
+/* styling of the div parallel to songs detials table */
+.likedsongs-table{
+  width:259px;
+  height: 100px;
+}
+.liked-by-fats-2{
+  width: 187px;
+  height: 40px;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 450px;
+ display: flex;
+ align-items: flex-start;
+}
+
+.liked-by-fats-1{
+  width: 187px;
+  height: 24px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700px;
+
+}
+
+
+.liked-final{
+  display: flex;
+  flex-direction: row;
+}
+
+.popular-liked-combine{
+  display: flex;
+  flex-direction: row;
+  width: 948px;
+  height: 360px;
+}
+.heading{
+  display: flex;
+  align-items: flex-start;
+}
+
+
+
+/* Song Table Styling */
+
+.tr{
+  width: 617px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.numbering{
+  height: 16px;
+  width: 16px;
+  font-weight: 450px;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.songname{
+  width: 86px;
+  height: 16px;
+  font-weight: 450px;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.follower{
+height: 16px;
+width: 60px;
+font-weight: 450px;
+font-size: 14px;
+line-height: 16px; 
+display: flex;
+justify-content: space-between;
+}
+.time{
+  width: 33px;
+  height: 16px;
+  font-weight: 450px;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/* popular releases section */
+.releases{
+  height: 238px;
+  width: 948px;
+  gap: 12px;
+}
+.popular-releases{
+  height: 24px;
+  width: 948px;
+  display: flex;
+  align-items: flex-start;
+
+}
+.popular-releases-h1{
+size: 20px;
+margin-bottom: 10px;
+font-weight: 700px;
+line-height: 24px;
+color: aliceblue;
+}
+.scrollable{
+  padding-top: 10px;
+  width: 1208px;
+  height: 202px;
+  gap: 24px;
+  display: flex;
+  flex-direction: row;
+}
+.popular-albums{
+  height: 202px;
+  width: 152px;
+  border-radius: 8px;
+  padding: 12px,12px,16px,12px;
+  gap: 12px;
+}
+.popular-albums-img{
+  height: 128px;
+  width: 1228px;
+  border-radius: 4px;
+}
+.div-popular-albums-h1{
+  width: 128px;
+  height: 34px;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popular-albums-h1{
+  width: 128px;
+  height: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700px;
+  color: aliceblue;
+  padding-top: 10px;
+}
+
+
+
+
+/* styling of he bottom navbar */
+.bottom-nav{
+  height: 80px;
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px,12px,16px,1px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color:#888;
+}
+.right-control{
+  width: 152px;
+  height: 12px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+.icons-right{
+  height: 12px;
+  width: 12px;
+  /* padding-top: 20px; */
+  display: flex;
+  flex-direction: row;
+}
+.center-control{
+  width: 152px;
+  height: 12px;
+  display: flex;
+  align-items: flex-start;
+}
+.icons-centeral{
+  width: 28px;
+  height: 28px;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;  
+}
+.playicon{
+  width: 28px;
+  height: 28px;
+  margin: 5px;
+  margin-top: 10px;
+}
+.left-control{
+  width: 152px;
+  height: 12px;
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+.imgBB{
+  height: 48px;
+  width: 48px;
+}
+.imjBB{
+  padding-top: 10px;
+  height: 48px;
+  width: 48px;
+}
+.headingBB{
+  padding-top: 5px;
+  height: 14px;
+  width: 74px;
+  font-size: 12px;
+  font-weight: 450px;
+  line-height: 14px;
+}
+.headingFD{
+  height: 12px;
+  width: 57px;
+  font-size: 10px;
+  font-weight: 450px;
+  line-height: 12px;
+  padding-top: 6px;
+  margin-left:8px ;
+}
+.BBFD{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 400px) {
+  /* For mobile phones: */
+  .fats-dominos {
+    width: 360px;
+    height: 269px;
+  }
+  .h1-fat-dominos{
+    font-weight: 900px;
+    size: 24px;
+    line-height: 53.13px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 0px;
+  }.h5-dominos{
+    padding-left: 0px;
+  }
+  .h6-dominos{
+    padding-left: 0px;
+    padding-top: 140px;
+  }
+  .lower-area{
+    height: 1005px;
+    width: 360px;
+  }
+  .popular-liked-combine{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .popular-table{
+    overflow-x: auto ;
+    width: 100%;
+  }
+  .table{
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto ;
+  }
+  .upper-sidebar{
+    height: 101px;
+    max-width: 360px;
+    bottom: 0;
+    left: 1;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+  }
+  .icons{
+    width: 46px;
+  }
+  .flex-container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .desktop{
+    display: flex;
+    flex-direction: column;
+  }
+  .scrollable{
+    display: flex;
+    flex-direction: column ;
+  }
+  .bottom-nav{
+    
+  margin-bottom: 42px;
+  height: 58px;
+  width: 360px;
+  }
+  .following{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 62px;
+    width: 336px;
+    padding-top: 24px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .table{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+/* Tablet Responsive */
+ /* @media only screen and (max-width: 768px) { */
+  /* For tablet: */
+  /* .fats-dominos { */
+    /* width: 768px; */
+    /* height: 269px;
+  }
+  .h1-fat-dominos{ */
+    /* font-weight: 900px;
+    size: 24px;
+    line-height: 53.13px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 0px;
+  }.h5-dominos{
+    padding-left: 0px;
+  }
+  .h6-dominos{
+    padding-left: 0px;
+    padding-top: 140px;
+  }
+  .lower-area{
+    height: 1005px;
+    width: 768px;
+  }
+  .popular-liked-combine{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .popular-table{
+    overflow-x: auto ;
+    width: 100%;
+  }
+  .table{
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto ;
+  }
+  .upper-sidebar{
+    height: 101px;
+    max-width: 768px;
+    bottom: 0;
+    left: 1;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+  }
+  .icons{
+    width: 60px;
+  }
+  .flex-container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .desktop{
+    display: flex;
+    flex-direction: column;
+  }
+  .scrollable{
+    display: flex;
+    flex-direction: column ;
+  }
+  .bottom-nav{
+    
+  margin-bottom: 42px;
+  height: 58px;
+  width: 768px;
+  }
+  .following{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 62px;
+    width: 700px;
+    padding-top: 24px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .table{
+    width: 100%; */
+  /* } */
+/* } */

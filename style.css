@@ -1,0 +1,126 @@
+
+
+
+/* The sidebar menu */
+  .sidenav-top { 
+    height: 200px;
+     /* Full-height: remove this if you want "auto" height */
+    width: 172px;
+     /* Set the width of the sidebar */
+    /* position: fixed; Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    align-items: flex-start;
+    background-color: #111; /* Black */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 32px;
+   }
+ 
+  .upper-sidebar{
+    width: 172px;
+    height: 114px;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 700px;
+  }
+  .icons{
+    width: 172px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    gap: 10px;
+  }
+  .lower-sidebar{
+    width: 172px;
+    height: 54px;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 700px;
+  }
+  /* The navigation menu links */
+  .sidenav-top a { 
+    text-decoration: none;
+    color: #818181;
+    display: flex;
+    width: 172px;
+    height:24px;
+    border-radius:0px, 4px, 4px, 0px;
+    padding: 4px, 12px, 4px, 12px;
+    gap: 8px
+    }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav-top a:hover { 
+    color: #f1f1f1;
+  }
+  
+  /* Style page content */
+  .main { 
+    margin-left: 117px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav-top {padding-top: 15px;}
+    .sidenav-top a {font-size: 18px;}
+  }
+
+
+  .sidenav-bottom{
+    height: 678px;
+    width: 172px;
+    background-color: #111;
+    gap: 4px;
+    padding: 0px,12px,0px,12px;
+  }
+  .sidenav-bottom-item{
+    width: 148px;
+    height: 14px;
+    display:flex;
+    flex-shrink: 0px;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 450px;
+    line-height: 14;
+    color: #f1f1f1;
+  }
+  .imgbottom-nav{
+    width: 559px;
+    height: 48px;
+  }
+  @media only screen and (max-width: 768px){
+    .icons{
+      width: 90px;
+
+    }
+    .upper-sidebar{
+      background-color: #818181;
+      height: 42px;
+      width: 360px;
+      /* bottom: 1; */
+      left: 0;
+      position: fixed;
+      display: flex;
+      flex-direction: row;
+    }
+    .icons a{
+      color:#818181;
+    }
+    .sidenav-top{
+      width: 0px;
+      display: flex;
+      flex-direction: column;
+   
+    }
+    .sidenav-bottom{
+      display: flex;
+      flex-direction: column;
+    }
+    .responsiv{
+      bottom: 0;
+      background-color: #111;
+    }
+  }
